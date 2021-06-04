@@ -22,7 +22,7 @@ PROBLEM
 2. Log their values to the console    
 
  
-SOLUTIOn
+SOLUTION
 
 let country = 'Philippines';
 let continent = "Asia";
@@ -31,8 +31,8 @@ let population = 110914345;
 console.log(country);
 console.log(continent);
 console.log(population);
-
 */
+
 
 /** DATA TYPES */
 
@@ -58,3 +58,41 @@ the value store in a variable, Instead, data types are determing AUTOMATICALLY
 /** Multi-line comments */
 // Single line comments
 // Keyboard Shortcut: command + / 
+
+/**
+true;
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+
+//typeof - displays new string value that displays the value it's referring to
+console.log(typeof true);
+
+//dynamic typing - changing the value of a variable.
+//e.g below shows the variable value changed from boolean to string. 
+javascriptIsFun = 'YES';
+ 
+let year;
+console.log(year); //shows undefined because the variable has an empty value;
+console.log(typeof year); //displays undefine. Undefine is both value and data type
+ */
+
+/** Data type Lecture Assignment
+
+1. Declare a variable called 'isIsland' and set its value according to your country. 
+The variable should hold a Boolean value. Also declare a variable 'language',
+but don't assign it any value yet.
+2. Log the types of 'isIsland', 'population', 'country', and 'language' 
+to the console.
+
+ANSWERS
+
+
+let isIsland = true;
+let language;
+
+console.log(typeof country);
+console.log(typeof language);
+console.log(typeof population);
+console.log(typeof isIsland);
+
+**/
