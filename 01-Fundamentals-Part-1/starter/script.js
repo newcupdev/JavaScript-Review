@@ -96,3 +96,36 @@ console.log(typeof population);
 console.log(typeof isIsland);
 
 **/
+
+/** Different ways of declaring variables */
+// let const var
+
+//let - for declaring variables that can change later. 'mutate' the variables
+//const - for declaring variables that won't change in the future. 
+//var - old way of declaring variables. works like let
+
+/** NOT MANDATORY TO DECLARE VARIABLES */ // not best practice for scope
+// e.g lastName = 'Schmedtmann';
+// console.log(lastName)
+
+/** DATA TYPE Assignment 
+1. Set the value of 'language' to the language spoken where you live (some
+   contries have multiple languages, but just choose one)
+2. Think about which variable should be const variables (which values will
+   never change, and which might change?) Then, change these variables to conts.
+3. Try to change one of the changed variables now, and observe what happens
+
+ANSWER
+
+const country = 'Philippines';
+const continent = "Asia";
+let population = 110914345;
+let isIsland = true;
+let language = 'tagalog';
+
+console.log(typeof country);
+console.log(typeof language);
+console.log(typeof population);
+console.log(typeof isIsland);
+ 
+*/
