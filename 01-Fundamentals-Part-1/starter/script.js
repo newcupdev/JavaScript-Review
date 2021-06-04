@@ -52,3 +52,9 @@ JavaScript has dynamic typing: We don NOT have to manually define the data type 
 the value store in a variable, Instead, data types are determing AUTOMATICALLY
 
  */
+
+/** COMMENT */
+
+/** Multi-line comments */
+// Single line comments
+// Keyboard Shortcut: command + / 
