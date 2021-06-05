@@ -129,3 +129,21 @@ console.log(typeof population);
 console.log(typeof isIsland);
  
 */
+
+/** BASIC OPERATORS */
+
+//Operator - allows us to transform or combine values
+
+/**
+Arithmetic Operators
++ - * /  
+
+2 ** 3 // means 2 to the power of 3 -> 2 * 2 * 2
+
++ can concatenate strings 
+e.g
+const firstName = 'Jonas';
+const lastName = 'Schmedtmann';
+console.log(firstName + ' ' + lastName);
+
+ */
