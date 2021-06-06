@@ -185,7 +185,29 @@ console.log(population++);
 console.log('Finland has more people than Philippines, which is ' + (finlandPopulation > population));
 console.log('Philippines have less people than an average country, which is ' + (averagePopulation > population));
 console.log(description);
-
 */
+
+/** OPERATOR PRECEDENCE*/
+/**
+
+reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+e.g.
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018
+
+console.log(now - 1991 > now - 2018); // - has precedence then the greater than symbol
+
+associativity - the order from left-to-right or right-to-left the operation happens
+e.g
+console.log(25 - 10 - 5); // prints 10 -> left-to-right associativity
+
+let x, y;
+x = y = 25 - 10 - 5; // associativiy is right-to-left because ' - ' took precedence. 
+
+console.log(x, y); prints x=10 and y=10
+ */
+
 
 
