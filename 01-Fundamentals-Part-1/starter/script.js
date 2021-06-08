@@ -240,3 +240,20 @@ console.log("Mark has a higher BMI which is " + markHigherBMI);
 
 */
 
+/// Strings and Template Literals ///
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037; 
+
+const jonas = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(jonas);
+
+//Template literals
+// use back ticks ``
+// use ${} in the variables 
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(jonasNew);
+
+//multiline string -> use \n\ -> new line
