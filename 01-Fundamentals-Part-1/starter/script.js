@@ -240,6 +240,7 @@ console.log("Mark has a higher BMI which is " + markHigherBMI);
 
 */
 
+/**
 /// Strings and Template Literals ///
 
 const firstName = 'Jonas';
@@ -257,3 +258,37 @@ const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
 console.log(jonasNew);
 
 //multiline string -> use \n\ -> new line
+
+ */
+
+/// TAKING DECISIONS ///
+
+const age = 15;
+
+
+if (age >= 18) {
+   console.log('You can start driving lessons 🚗');
+} else {
+   const yearsLeft = 18 - age;
+   console.log(`You can NOT drive yet 🛑. You have to wait in ${yearsLeft} years.`);
+}
+
+/**
+// if else condition statement
+
+if(CONDITION){
+   STATEMENT if TRUE
+} else {
+   STEMENT if FALSE
+}
+ */
+
+const birthYear = 1991;
+let century;
+
+if (birthYear <= 2000) {
+   century = 20;
+} else {
+   century = 21;
+}
+console.log(century);
