@@ -381,7 +381,7 @@ if (markBMI > johnBMI) {
                - happens implicitly, necessary in some situations
 
 // Conversion
-*/
+
 const inputYear = '1991'; //string value
 console.log(inputYear + 18); // 199118 -> string + string concatenates
 //manually converting 
@@ -413,6 +413,37 @@ console.log('23' - '10' - 3); // string + string - number -> output 10 as a numb
 let n = '1' + 1;
 n = n - 1;
 console.log(n); // 10 
+
+// Assignment //
+1. Predict the result of these 5 operations without executing them:
+'9' - '5';
+'19' - '13' + '17';
+'19' - '13' + 17;
+'123' < 57;
+4 + 6 + '4' + 9 - 4 - 2;
+
+2. Execute the operations to check if you were right
+
+// Solution //
+
+Prediction
+4
+617
+23
+False
+107 -> wrong -> correct output: 1043
+
+
+console.log('9' - '5');
+console.log('19' - '13' + '17');
+console.log('19' - '13' + 17);
+console.log('123' < 57);
+console.log(4 + 6 + '4' + 9 - 4 - 2);
+*/
+
+
+
+
 
 
 
