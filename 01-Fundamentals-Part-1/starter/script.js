@@ -327,7 +327,7 @@ below average"
 and set the population back to original
 
 // Solution
- */
+ 
 
 let country = 'Philippines';
 let continent = 'Asia';
@@ -342,3 +342,33 @@ if (population > 33) {
    console.log(`${country}'s population is ${average - population} million below average.`)
    
 }
+*/
+
+/// CODING CHALLENGE 2 ///
+/**
+ Use the BMI example from Challenge 1, and the code you already wrote, and improve it
+ Your tasks:
+ 1. Print a nice output to the console, saying who has the higher BMI. The message is either 
+ "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+ 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3)
+  is higher than John's (23.9)!"
+
+Solution
+*/
+
+const markWeight = 90;
+const markHeight = 1.99;
+const johnWeight = 78;
+const johnHeight = 1.65;
+
+const markBMI = markWeight / (markHeight ** 2);
+const johnBMI = johnWeight / (johnHeight ** 2);
+
+console.log(markBMI, johnBMI);
+
+if (markBMI > johnBMI) {
+   console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})`);
+} else {
+   console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})`);
+}
+
