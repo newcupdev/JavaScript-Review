@@ -172,18 +172,22 @@ which contains a string with this format: 'Portugal is in Europe, and its
 
 Solution
 
-
+let country = 'Philippines';
+let continent = 'Asia';
 let countryOne = 'Philip';
 let countryTwo = 'pines';
 let population = 110914345; 
+let language = 'tagalog';
 let finlandPopulation = 11000000;
 let averagePopulation = 33000000;
-let description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+
 console.log(countryOne + ' has a population of ' + population/2);
 console.log(countryTwo + ' has a population of ' + population/2);
 console.log(population++);
 console.log('Finland has more people than Philippines, which is ' + (finlandPopulation > population));
 console.log('Philippines have less people than an average country, which is ' + (averagePopulation > population));
+
+let description = country + " is in " + continent + ", and its " + population + " people speaks " +  language;
 console.log(description);
 */
 
@@ -259,10 +263,30 @@ console.log(jonasNew);
 
 //multiline string -> use \n\ -> new line
 
- */
+// Assignment //
+1. Recreate the 'description' variable from the last assignment, this time using the template literal syntax
+
+SOLUTION
+
+
+let country = 'Philippines';
+let continent = 'Asia';
+
+let population = 110914345; 
+let language = 'tagalog';
+
+
+// let description = country + " is in " + continent + ", and its " + population + " people speaks " +  language;
+
+//using template literals solution
+
+let description = `${country} is in ${continent}, and its ${population} people speaks ${language}.`
+console.log(description);
+*/
+ 
 
 /// TAKING DECISIONS ///
-
+/** 
 const age = 15;
 
 
@@ -272,6 +296,7 @@ if (age >= 18) {
    const yearsLeft = 18 - age;
    console.log(`You can NOT drive yet 🛑. You have to wait in ${yearsLeft} years.`);
 }
+*/
 
 /**
 // if else condition statement
@@ -283,6 +308,7 @@ if(CONDITION){
 }
  */
 
+/**
 const birthYear = 1991;
 let century;
 
@@ -292,3 +318,5 @@ if (birthYear <= 2000) {
    century = 21;
 }
 console.log(century);
+
+ */
