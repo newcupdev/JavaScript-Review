@@ -354,7 +354,6 @@ if (population > 33) {
   is higher than John's (23.9)!"
 
 Solution
-*/
 
 const markWeight = 90;
 const markHeight = 1.99;
@@ -371,4 +370,56 @@ if (markBMI > johnBMI) {
 } else {
    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})`);
 }
+
+*/
+
+// CONVERSION AND COERCION
+/**
+ Type Conversion - when we manually convert from one type to another
+
+ Type Coercion - when JavaScripts automatically converts type behind the scene for the user. 
+               - happens implicitly, necessary in some situations
+
+// Conversion
+*/
+const inputYear = '1991'; //string value
+console.log(inputYear + 18); // 199118 -> string + string concatenates
+//manually converting 
+console.log(Number(inputYear) + 18); //2009
+
+console.log(Number('Jonas')); //NaN -> not a number -> invalid number
+console.log(String(12)); // '23' as a string value
+
+//JavaScript can convert 3 types only. to a Number, to a String, and to a Boolean
+
+//Coercion 
+// -happens whenever an operator is dealing with values that have different types.
+
+console.log("I am " + 23 + " years old"); // string + number + string -> output "I am 23 years old" as a string.
+//JavaScript automatically converts 23 as a string and outputs a string
+
+console.log('23' - '10' - 3); // string + string - number -> output 10 as a number
+//JavaScript automatically converts the '23' and '10' to numbers and output a number value. 
+// ' - ' operation converts string to number
+// ' * ' operation converts string to number
+// ' / ' operation converts string to number
+// ' > ' operation converts string to logical value
+
+// ' + ' operation converts number to string. Output: 23103 
+
+// ' + ' works because it's also a concatenation symbol for string but the other operation won't make sense 
+// that's why JavaScript use type coercion to converts the string to number
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n); // 10 
+
+
+
+
+
+
+
+
+
 
