@@ -441,6 +441,20 @@ console.log('123' < 57);
 console.log(4 + 6 + '4' + 9 - 4 - 2);
 */
 
+// Truthy and Falsy
+/**
+ 
+Falsy - values that are not exactly falst but will become false when we try to convert them into a boolean
+
+5 Falsy Values
+0, '', undefined, null, NAN -> when converted to boolean becomeas a falsy value
+ */
+
+console.log(Boolean(0)); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean('Jonas')); // true
+console.log(Boolean({})); // true
+console.log(Boolean('')); // false
 
 
 
