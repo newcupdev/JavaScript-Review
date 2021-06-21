@@ -448,7 +448,7 @@ Falsy - values that are not exactly falst but will become false when we try to c
 
 5 Falsy Values
 0, '', undefined, null, NAN -> when converted to boolean becomeas a falsy value
- */
+
 
 console.log(Boolean(0)); // false
 console.log(Boolean(undefined)); // false
@@ -470,6 +470,38 @@ if (height) {
 } else {
    console.log(`Height is undefined`);
 }
+ */
+
+// Equality Operators == vs === //
+/*
+const age = 18;
+
+// strict equality operator
+// does not perform type coercion
+// only returns true if the are exactly the same
+if (age === 18) console.log(`You just became an adult`); 
+
+// loose equality operator
+// performs type coercion
+if (age == '18') console.log(`You just became an adult`); 
+// results to TRUE
+
+const favourite = prompt(`What's your fave number?`);
+
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+   console.log(`it's strict equality operator!`);
+} else if (favourite == '23') {
+   console.log(`it's a loose equality operator`);
+} else {
+   console.log('please use 23 only');
+}
+
+
+
+*/
 
 
 
