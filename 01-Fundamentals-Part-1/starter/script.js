@@ -593,6 +593,43 @@ if (isIsland && isEnglish && population < 50) {
 
 */
 
+//Coding Challenge 3
+
+const dScoreOne = 97;
+const dScoreTwo = 112;
+const dScoreThree = 101;
+
+const kScoreOne = 109;
+const kScoreTwo = 95;
+const kScoreThree = 106;
+
+const minimum = 100;
+
+const dAverage = (dScoreOne + dScoreTwo + dScoreThree) / 3;
+const kAverage = (kScoreOne + kScoreTwo + kScoreThree) / 3;
+
+/** Task 1&2
+if (dAverage > kAverage) {
+   console.log('Dolphins won!');
+} else {
+   console.log('Koalas won!');
+}
+*/
+
+/** Task 3 & 4 */
+if (dAverage > minimum && dAverage > kAverage) {
+   console.log('Dolphins won!');
+} else if (kAverage > minimum && kAverage > dAverage) {
+   console.log('Koalas won!');
+} else if (dAverage == kAverage) {
+   console.log('It was a draw!');
+} else {
+   console.log('Both averages are below 100!');
+}
+
+
+
+
 
 
 
