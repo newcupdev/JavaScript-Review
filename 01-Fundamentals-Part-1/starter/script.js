@@ -1,6 +1,6 @@
 /** VALUES AND VARIABLES */
 
-/** Conventions for naming variables 
+/** Conventions for naming variables
 
 camelCase - first word as lowercase then subsequent words has uppercase first letter
             e.g firstName, firstNamePerson
@@ -15,18 +15,18 @@ Rules
 
 /** Assignment 1
 
-PROBLEM 
+PROBLEM
 
 1. Declare variables called 'country', 'continent' and 'population' and assign
    their values according to your own country (population in millions)
-2. Log their values to the console    
+2. Log their values to the console
 
- 
+
 SOLUTION
 
 let country = 'Philippines';
 let continent = "Asia";
-let population = 110914345; 
+let population = 110914345;
 
 console.log(country);
 console.log(continent);
@@ -68,9 +68,9 @@ console.log(javascriptIsFun);
 console.log(typeof true);
 
 //dynamic typing - changing the value of a variable.
-//e.g below shows the variable value changed from boolean to string. 
+//e.g below shows the variable value changed from boolean to string.
 javascriptIsFun = 'YES';
- 
+
 let year;
 console.log(year); //shows undefined because the variable has an empty value;
 console.log(typeof year); //displays undefine. Undefine is both value and data type
@@ -78,10 +78,10 @@ console.log(typeof year); //displays undefine. Undefine is both value and data t
 
 /** Data type Lecture Assignment
 
-1. Declare a variable called 'isIsland' and set its value according to your country. 
+1. Declare a variable called 'isIsland' and set its value according to your country.
 The variable should hold a Boolean value. Also declare a variable 'language',
 but don't assign it any value yet.
-2. Log the types of 'isIsland', 'population', 'country', and 'language' 
+2. Log the types of 'isIsland', 'population', 'country', and 'language'
 to the console.
 
 ANSWERS
@@ -108,7 +108,7 @@ console.log(typeof isIsland);
 // e.g lastName = 'Schmedtmann';
 // console.log(lastName)
 
-/** DATA TYPE Assignment 
+/** DATA TYPE Assignment
 1. Set the value of 'language' to the language spoken where you live (some
    contries have multiple languages, but just choose one)
 2. Think about which variable should be const variables (which values will
@@ -127,7 +127,7 @@ console.log(typeof country);
 console.log(typeof language);
 console.log(typeof population);
 console.log(typeof isIsland);
- 
+
 */
 
 /** BASIC OPERATORS */
@@ -136,18 +136,18 @@ console.log(typeof isIsland);
 
 /**
 Arithmetic Operators
-+ - * /  
++ - * /
 
 2 ** 3 // means 2 to the power of 3 -> 2 * 2 * 2
 
-+ can concatenate strings 
++ can concatenate strings
 e.g
 const firstName = 'Jonas';
 const lastName = 'Schmedtmann';
 console.log(firstName + ' ' + lastName);
 
 Assignment Operators
-= 
+=
 
 += -> e.g x += 10 -> x = x + 10
 
@@ -162,12 +162,12 @@ Assignment
 1. If your country split in half, and each half would contain half the population,
 then how many people would live in each half?
 2. Increase the policy of your country by 1 and log the result to consule.
-3. Finland has a population of 6 million. Does your country have more people than 
+3. Finland has a population of 6 million. Does your country have more people than
 Finland?
 4. The average population of a country is 33 million people. Does your country have
 less people than the average country?
 5. Based on the variables you created, create a new variable 'description'
-which contains a string with this format: 'Portugal is in Europe, and its 
+which contains a string with this format: 'Portugal is in Europe, and its
 11 million people speak portuguese.
 
 Solution
@@ -176,7 +176,7 @@ let country = 'Philippines';
 let continent = 'Asia';
 let countryOne = 'Philip';
 let countryTwo = 'pines';
-let population = 110914345; 
+let population = 110914345;
 let language = 'tagalog';
 let finlandPopulation = 11000000;
 let averagePopulation = 33000000;
@@ -208,7 +208,7 @@ e.g
 console.log(25 - 10 - 5); // prints 10 -> left-to-right associativity
 
 let x, y;
-x = y = 25 - 10 - 5; // associativiy is right-to-left because ' - ' took precedence. 
+x = y = 25 - 10 - 5; // associativiy is right-to-left because ' - ' took precedence.
 
 console.log(x, y); prints x=10 and y=10
  */
@@ -226,9 +226,9 @@ Your tasks:
 
 Test Data:
 - Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
-- Data 2: Mark weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall. 
+- Data 2: Mark weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 
-//SOLUTION 
+//SOLUTION
 
 const markWeight = 78;
 const markHeight = 1.69;
@@ -250,14 +250,14 @@ console.log("Mark has a higher BMI which is " + markHigherBMI);
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
-const year = 2037; 
+const year = 2037;
 
 const jonas = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
 console.log(jonas);
 
 //Template literals
 // use back ticks ``
-// use ${} in the variables 
+// use ${} in the variables
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
 console.log(jonasNew);
 
@@ -272,7 +272,7 @@ SOLUTION
 let country = 'Philippines';
 let continent = 'Asia';
 
-let population = 110914345; 
+let population = 110914345;
 let language = 'tagalog';
 
 
@@ -283,10 +283,10 @@ let language = 'tagalog';
 let description = `${country} is in ${continent}, and its ${population} people speaks ${language}.`
 console.log(description);
 */
- 
+
 
 /// TAKING DECISIONS ///
-/** 
+/**
 const age = 15;
 
 
@@ -320,19 +320,19 @@ if (birthYear <= 2000) {
 console.log(century);
 
 // Assignment
-1. If your country's population is greater than 33 million, log a string like this to the console: 
-"Portugal's population is above average." Otherwise, log a string like "Portugal's population is 22 million 
-below average" 
+1. If your country's population is greater than 33 million, log a string like this to the console:
+"Portugal's population is above average." Otherwise, log a string like "Portugal's population is 22 million
+below average"
 2. After checking the result, change the population temporarily to 13 and then to 130. See the different results,
 and set the population back to original
 
 // Solution
- 
+
 
 let country = 'Philippines';
 let continent = 'Asia';
 
-let population = 13; 
+let population = 13;
 let average = 33;
 let language = 'tagalog';
 
@@ -340,7 +340,7 @@ if (population > 33) {
    console.log(`${country}'s population is above average.`);
 } else {
    console.log(`${country}'s population is ${average - population} million below average.`)
-   
+
 }
 */
 
@@ -348,7 +348,7 @@ if (population > 33) {
 /**
  Use the BMI example from Challenge 1, and the code you already wrote, and improve it
  Your tasks:
- 1. Print a nice output to the console, saying who has the higher BMI. The message is either 
+ 1. Print a nice output to the console, saying who has the higher BMI. The message is either
  "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
  2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3)
   is higher than John's (23.9)!"
@@ -377,14 +377,14 @@ if (markBMI > johnBMI) {
 /**
  Type Conversion - when we manually convert from one type to another
 
- Type Coercion - when JavaScripts automatically converts type behind the scene for the user. 
+ Type Coercion - when JavaScripts automatically converts type behind the scene for the user.
                - happens implicitly, necessary in some situations
 
 // Conversion
 
 const inputYear = '1991'; //string value
 console.log(inputYear + 18); // 199118 -> string + string concatenates
-//manually converting 
+//manually converting
 console.log(Number(inputYear) + 18); //2009
 
 console.log(Number('Jonas')); //NaN -> not a number -> invalid number
@@ -392,27 +392,27 @@ console.log(String(12)); // '23' as a string value
 
 //JavaScript can convert 3 types only. to a Number, to a String, and to a Boolean
 
-//Coercion 
+//Coercion
 // -happens whenever an operator is dealing with values that have different types.
 
 console.log("I am " + 23 + " years old"); // string + number + string -> output "I am 23 years old" as a string.
 //JavaScript automatically converts 23 as a string and outputs a string
 
 console.log('23' - '10' - 3); // string + string - number -> output 10 as a number
-//JavaScript automatically converts the '23' and '10' to numbers and output a number value. 
+//JavaScript automatically converts the '23' and '10' to numbers and output a number value.
 // ' - ' operation converts string to number
 // ' * ' operation converts string to number
 // ' / ' operation converts string to number
 // ' > ' operation converts string to logical value
 
-// ' + ' operation converts number to string. Output: 23103 
+// ' + ' operation converts number to string. Output: 23103
 
-// ' + ' works because it's also a concatenation symbol for string but the other operation won't make sense 
+// ' + ' works because it's also a concatenation symbol for string but the other operation won't make sense
 // that's why JavaScript use type coercion to converts the string to number
 
 let n = '1' + 1;
 n = n - 1;
-console.log(n); // 10 
+console.log(n); // 10
 
 // Assignment //
 1. Predict the result of these 5 operations without executing them:
@@ -443,7 +443,7 @@ console.log(4 + 6 + '4' + 9 - 4 - 2);
 
 // Truthy and Falsy
 /**
- 
+
 Falsy - values that are not exactly falst but will become false when we try to convert them into a boolean
 
 5 Falsy Values
@@ -479,11 +479,11 @@ const age = 18;
 // strict equality operator
 // does not perform type coercion
 // only returns true if the are exactly the same
-if (age === 18) console.log(`You just became an adult`); 
+if (age === 18) console.log(`You just became an adult`);
 
 // loose equality operator
 // performs type coercion
-if (age == '18') console.log(`You just became an adult`); 
+if (age == '18') console.log(`You just became an adult`);
 // results to TRUE
 
 const favourite = prompt(`What's your fave number?`);
@@ -527,9 +527,53 @@ if (numNeighbours === 1) {
 
 */
 
+/** Boolean Logic */
+
+/**
+AND Operator - &&
+
+True AND True = TRUE
+True AND False = FALSE
+False AND True = FALSE
+False AND False = FALSE
+
+OR Operator - ||
+
+True OR True = TRUE
+True OR False = TRUE
+False OR True = TRUE
+False OR False = FALSE
+
+NOT Operator - !
+
+NOT True = FALSE
+NOT False = TRUE
+
+ */
+
+/** Logical Operators */
+
+// const hasDriversLicense = true; //A
+// const hasGoodVision = false; //B
+
+// console.log(hasDriversLicense && hasGoodVision); //false
+// console.log(hasDriversLicense || hasGoodVision); //true
+// console.log(!hasDriversLicense); //false
 
 
+// const shouldDrive = hasDriversLicense && hasGoodVision;
 
+// if (shouldDrive) {
+//    console.log('Sarah is able to drive');
+// } else {
+//    console.log('Someone else should drive');
+// }
+
+// //OUTPUT: Someone else should drive
+
+// const isTired = false;
+
+// console.log(hasDriversLicense && hasGoodVision && isTired); //false
 
 
 
