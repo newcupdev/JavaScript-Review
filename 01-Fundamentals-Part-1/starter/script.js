@@ -576,8 +576,22 @@ NOT False = TRUE
 // console.log(hasDriversLicense && hasGoodVision && isTired); //false
 
 
+/** Logical Operator Assignment */
 
+//Solution
+/**
+const country = 'Philippines'
+const isIsland = true;
+const population = 30;
+const isEnglish = false;
 
+if (isIsland && isEnglish && population < 50) {
+   console.log(`Sarah can live in the ${country}.`);
+} else {
+   console.log(`Sarah can not live in ${country}!`);
+}
+
+*/
 
 
 
