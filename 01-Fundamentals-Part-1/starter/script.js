@@ -513,7 +513,7 @@ what happens when there is exactly 1 border! Why is this happening?
 8. Reflect on why we should use the === operator and type coversion in this situation
 
 //Solution
-*/
+
 
 let numNeighbours = Number (prompt(`How many neighbour countries does your contry have?`));
 
@@ -524,6 +524,8 @@ if (numNeighbours === 1) {
 } else {
    console.log(`No borders`)
 }
+
+*/
 
 
 
